@@ -1,11 +1,11 @@
-# **🌐 𝐃𝐚𝐭𝐚 𝐀𝐧𝐚𝐥𝐲𝐬𝐭 | 𝐖𝐞𝐛 𝐒𝐜𝐫𝐚𝐩𝐢𝐧𝐠, 𝐃𝐚𝐭𝐚 𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠, Data Visualization & 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐒𝐩𝐞𝐜𝐢𝐚𝐥𝐢𝐬𝐭 🌐**
+# **𝐃𝐚𝐭𝐚 𝐀𝐧𝐚𝐥𝐲𝐬𝐭 | 𝐖𝐞𝐛 𝐒𝐜𝐫𝐚𝐩𝐢𝐧𝐠, 𝐃𝐚𝐭𝐚 𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠, Data Visualization & 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐒𝐩𝐞𝐜𝐢𝐚𝐥𝐢𝐬𝐭**
 
 I'm Nickopusan, a passionate Data Analyst who helps businesses unlock hidden insights, automate data collection, and optimize decision-making through data-driven solutions.
 
 With a blend of 𝐖𝐞𝐛 𝐒𝐜𝐫𝐚𝐩𝐢𝐧𝐠, 𝐃𝐚𝐭𝐚 𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠, 𝐕𝐢𝐬𝐮𝐚𝐥𝐢𝐳𝐚𝐭𝐢𝐨𝐧, 𝐚𝐧𝐝 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠, I transform raw data into actionable insights that fuel business growth.
 
-What I Can Help You With:
-📌 𝐒𝐜𝐫𝐚𝐩𝐢𝐧𝐠 & 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 – Extract data from websites using Python + Scrapy + Playwright
+What I Can Help You With:  
+📌 𝐒𝐜𝐫𝐚𝐩𝐢𝐧𝐠 & 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 – Extract data from websites using Python + Scrapy + Playwright  
 📌 𝐃𝐚𝐭𝐚 𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠 & 𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 – Fix messy datasets with Pandas + SQL
 📌 𝐃𝐚𝐭𝐚 𝐕𝐢𝐬𝐮𝐚𝐥𝐢𝐳𝐚𝐭𝐢𝐨𝐧 & 𝐑𝐞𝐩𝐨𝐫𝐭𝐢𝐧𝐠 – Build interactive dashboards in Power BI
 📌 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐌𝐨𝐝𝐞𝐥𝐬 – Fraud detection, anomaly detection, and predictive analytics
