@@ -1,12 +1,12 @@
-###House Price Prediction Using Machine Learning
+### House Price Prediction Using Machine Learning
 ##Introduction
 This project demonstrates a complete machine learning workflow for predicting house prices using the "House Test Data.csv" dataset. The objective is to develop and evaluate regression models that predict house prices based on features such as the number of bedrooms, bathrooms, square footage, and location. This README outlines the steps taken, the models used, and the skills demonstrated, making it a strong addition to my GitHub portfolio.
 
-##Project Workflow
-#1. Data Loading and Initial Setup
+## Project Workflow
+# 1. Data Loading and Initial Setup
 Libraries Used: The project leverages Python libraries like pandas and numpy for data manipulation, matplotlib and seaborn for visualization, and scikit-learn, xgboost, and lightgbm for machine learning.
 Dataset: The dataset includes features such as price, bedrooms, bathrooms, sqft_living, street, city, and others, loaded into a pandas DataFrame for analysis.
-#2. Data Preprocessing
+# 2. Data Preprocessing
 Categorical Encoding: Categorical columns (date, street, city, statezip, country) are transformed into numerical values using LabelEncoder to prepare them for modeling.
 Outlier Detection and Removal:
 A boxplot visualizes the distribution of price to detect outliers.
@@ -15,14 +15,14 @@ Handling Missing Values:
 Zero values are converted to NaN to identify missing data.
 Columns with excessive missing values (yr_renovated, sqft_basement, view, waterfront) are removed.
 Rows with remaining NaN values are dropped, and any leftover NaNs are filled with 0.
-#3. Feature Engineering
+# 3. Feature Engineering
 A new feature, price_per_sqft, is engineered by dividing price by sqft_living. This feature captures the price relative to living area, potentially enhancing the model’s predictive accuracy.
-#4. Data Preparation for Modeling
+# 4. Data Preparation for Modeling
 Feature and Target Split: The dataset is divided into features (x) and the target variable (y, which is price).
 Scaling: Features are standardized using StandardScaler to ensure uniform scaling.
 Train-Test Split: The data is split into training and testing sets (60-40 split) to evaluate model performance on unseen data.
-#5. Model Training and Evaluation
-##Several regression models are trained and assessed using Mean Absolute Error (MAE) and R² Score. The results are summarized below:
+# 5. Model Training and Evaluation
+Several regression models are trained and assessed using Mean Absolute Error (MAE) and R² Score. The results are summarized below:
 
 Model	MAE	R²
 K-Nearest Neighbors	90,199.96	0.786
