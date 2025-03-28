@@ -33,7 +33,7 @@ Several regression models are trained and assessed using Mean Absolute Error (MA
 | LightGBM             | 18,042.33   | 0.990  |
 | Linear Regression    | 59,973.30   | 0.878  |
 
-### - Key Insights:
+### Key Insights:
 Random Forest and Gradient Boosting excel with the lowest MAE and highest R² scores, indicating their ability to model complex relationships in the data.
 Ensemble methods outperform simpler models like Linear Regression and KNN, making them ideal for this task.
 ## Why This Matters
