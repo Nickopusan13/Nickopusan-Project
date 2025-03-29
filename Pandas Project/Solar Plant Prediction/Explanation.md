@@ -4,24 +4,24 @@ This repository contains a Jupyter Notebook (2_Solar_Plant.ipynb) that demonstra
 ## 1. Importing Libraries
 The notebook begins by importing essential libraries, including:
 
-Data Handling: pandas, numpy
+- **Data Handling**: `pandas`, `numpy`
 
-Visualization: matplotlib, seaborn
+- **Visualization**: `matplotlib`, `seaborn`
 
-Preprocessing & Model Selection: Scikit-Learn modules such as train_test_split, StandardScaler, and LabelEncoder
+- **Preprocessing & Model Selection**: Scikit-Learn modules such as `train_test_split`, `StandardScaler`, and `LabelEncoder`
 
-Handling Imbalanced Data: RandomOverSampler from imblearn
+- **Handling Imbalanced Data**: `RandomOverSampler` from `imblearn`
 
-Machine Learning Model: XGBClassifier from the XGBoost package
+- **Machine Learning Model**: `XGBClassifier` from the XGBoost package
 
-Model Persistence: joblib
+- **Model Persistence**: `joblib`
 
-Additional utilities such as warnings (to ignore unnecessary warnings) are also configured.
+Additional utilities such as `warnings` (to ignore unnecessary warnings) are also configured.
 
-2. Data Loading and Cleaning
-Loading Data: Data for multiple solar plants is loaded (e.g., from CSV files), and initial checks (like duplicate counts) are performed.
+## 2. Data Loading and Cleaning
+- **Loading Data**: Data for multiple solar plants is loaded (e.g., from CSV files), and initial checks (like duplicate counts) are performed.
 
-Filtering Failures: The notebook filters the dataset to focus on potential failure events. For example, it selects rows where AC_POWER is zero during daytime (i.e., when the current hour is between the sunrise and sunset times).
+- **Filtering Failures**: The notebook filters the dataset to focus on potential failure events. For example, it selects rows where `AC_POWER` is zero during daytime (i.e., when the current hour is between the sunrise and sunset times).
 
 3. Exploratory Data Analysis (EDA)
 To understand the characteristics of failure events, the notebook creates histograms using Seaborn:
