@@ -2,17 +2,17 @@
 This Python script automates the process of scraping trading hours data from the CME Group Trading Hours page using the playwright library. It extracts product names and their associated trading hours, then saves the data into a timestamped CSV file for easy analysis or record-keeping.
 
 ## Overview
-- Purpose: Scrape trading hours data for various financial products listed on the CME Group website.
-- Tools:
+- **Purpose**: Scrape trading hours data for various financial products listed on the CME Group website.
+- **Tools**:
   - `playwright.async_api`: Automates a Chromium browser to interact with dynamic web content.
-  - csv: Writes the scraped data to a CSV file.
-  - datetime: Generates timestamps for unique CSV filenames.
-  - asyncio: Manages asynchronous operations for efficient web scraping.
-- Output: A CSV file (e.g., trading_hours_20231024_153022.csv) containing columns: Product Name, Trade Group, and Trade Group Text.
-How It Works
-1. Setup and Browser Initialization
-The script launches a Chromium browser in non-headless mode (visible for debugging) using playwright.
-It navigates to the target URL: https://www.cmegroup.com/trading-hours.html.
+  - `csv`: Writes the scraped data to a CSV file.
+  - `datetime`: Generates timestamps for unique CSV filenames.
+  - `asyncio`: Manages asynchronous operations for efficient web scraping.
+- **Output**: A CSV file (e.g., trading_hours_20231024_153022.csv) containing columns: Product Name, Trade Group, and Trade Group Text.
+## How It Works
+### 1. Setup and Browser Initialization
+- The script launches a Chromium browser in non-headless mode (visible for debugging) using `playwright`.
+- It navigates to the target URL: `https://www.cmegroup.com/trading-hours.html`.
 python
 
 Collapse
@@ -83,11 +83,11 @@ async def get_data(page, writer):
 5. Asynchronous Execution
 The script uses asyncio to handle asynchronous browser operations, such as waiting for page elements to load or actions to complete.
 The main function start_url is executed with asyncio.run().
-python
-
-Collapse
-
-Wrap
+```python
+async with async_playwright() as playwright:
+    browser = await playwright.chromium.launch(headless=False)
+    page = await browser.new_page()
+    await page.goto(url)
 
 Copy
 if __name__ == "__main__":
