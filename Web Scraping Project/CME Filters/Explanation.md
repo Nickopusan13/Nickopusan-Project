@@ -4,7 +4,7 @@ This Python script automates the process of scraping trading hours data from the
 ## Overview
 - Purpose: Scrape trading hours data for various financial products listed on the CME Group website.
 - Tools:
-  - playwright.async_api: Automates a Chromium browser to interact with dynamic web content.
+  - `playwright.async_api`: Automates a Chromium browser to interact with dynamic web content.
   - csv: Writes the scraped data to a CSV file.
   - datetime: Generates timestamps for unique CSV filenames.
   - asyncio: Manages asynchronous operations for efficient web scraping.
