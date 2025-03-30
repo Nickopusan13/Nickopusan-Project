@@ -1,5 +1,5 @@
 # Penguin Species Classification
-This project uses a dataset of penguin measurements to predict species (Adelie, Gentoo, Chinstrap) with a Random Forest Classifier.
+This project [`Penguin.ipynb`](Penguin.ipynb) uses a dataset of penguin measurements to predict species (Adelie, Gentoo, Chinstrap) with a Random Forest Classifier.
 
 ## Dataset
 - Source: `penguins.csv`
