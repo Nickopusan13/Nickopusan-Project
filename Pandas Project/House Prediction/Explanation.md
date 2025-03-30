@@ -5,7 +5,7 @@ This project [`House.ipynb`](House.ipynb) demonstrates a complete machine learni
 ## Project Workflow
 ### 1. Data Loading and Initial Setup
 Libraries Used: The project leverages `Python` libraries like `pandas` and `numpy` for data manipulation, `matplotlib` and `seaborn` for visualization, and `scikit-learn`, `xgboost`, and `lightgbm` for machine learning.
-Dataset: The dataset includes features such as `price`, `bedrooms`, `bathrooms`, `sqft_living`, `street`, `city`, and `others`, loaded into a pandas DataFrame for analysis.
+Dataset: The dataset includes features such as price, bedrooms, bathrooms, sqft_living, street, city, and others, loaded into a pandas DataFrame for analysis.
 ### 2. Data Preprocessing
 Categorical Encoding: Categorical columns (date, street, city, statezip, country) are transformed into numerical values using LabelEncoder to prepare them for modeling.
 Outlier Detection and Removal:
