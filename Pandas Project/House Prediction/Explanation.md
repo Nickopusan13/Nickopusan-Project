@@ -1,6 +1,6 @@
 # House Price Prediction Using Machine Learning
 ### Introduction
-This project demonstrates a complete machine learning workflow for predicting house prices using the "House Test Data.csv" dataset. The objective is to develop and evaluate regression models that predict house prices based on features such as the number of bedrooms, bathrooms, square footage, and location. This README outlines the steps taken, the models used, and the skills demonstrated, making it a strong addition to my GitHub portfolio.
+This project [`House.ipynb`](House.ipynb) demonstrates a complete machine learning workflow for predicting house prices using the "House Test Data.csv" dataset. The objective is to develop and evaluate regression models that predict house prices based on features such as the number of bedrooms, bathrooms, square footage, and location. This README outlines the steps taken, the models used, and the skills demonstrated, making it a strong addition to my GitHub portfolio.
 
 ## Project Workflow
 ### 1. Data Loading and Initial Setup
