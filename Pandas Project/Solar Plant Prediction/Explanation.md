@@ -1,5 +1,5 @@
 # Solar Plant Failure Prediction Notebook
-This repository contains a Jupyter Notebook (`solar_plant.ipynb`) that demonstrates an end-to-end pipeline for detecting failure events in solar plants. The notebook covers data preparation, visualization, model training, evaluation, and finally, model persistence. Below is an overview of the main sections and processes:
+This repository contains a Jupyter Notebook ([2_Solar_Plant.ipynb](2_Solar_Plant.ipynb)) that demonstrates an end-to-end pipeline for detecting failure events in solar plants. The notebook covers data preparation, visualization, model training, evaluation, and finally, model persistence. Below is an overview of the main sections and processes:
 
 ## 1. Importing Libraries
 The notebook begins by importing essential libraries, including:
