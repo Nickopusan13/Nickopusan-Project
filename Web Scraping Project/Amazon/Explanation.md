@@ -1,5 +1,5 @@
 # Amazon Review Scraper Explanation
-This Python script automates the process of scraping customer reviews from an Amazon product page using the `playwright` library. It extracts review details such as the reviewer’s name, review title, date, rating, and review text, then saves the data into a CSV file for further analysis.
+This Python script [`amazon.py`](amazon.py) automates the process of scraping customer reviews from an Amazon product page using the `playwright` library. It extracts review details such as the reviewer’s name, review title, date, rating, and review text, then saves the data into a CSV file for further analysis.
 
 ## Overview
 - **Purpose**: Scrape customer reviews from a specific Amazon product page.
