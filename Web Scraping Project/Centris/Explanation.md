@@ -1,5 +1,5 @@
 # Centris Web Scraper
-This Scrapy project is designed to scrape property listings from the Centris website, a real estate platform. It leverages Scrapy for web scraping and Playwright for browser automation to handle dynamic content, user authentication, and page navigation. The scraped data is cleaned, structured, and saved as JSON files, with associated images downloaded to organized directories.
+This Scrapy project is designed to scrape property listings from the [`Centris`](https://www.centris.ca/)Centris website, a real estate platform. It leverages Scrapy for web scraping and Playwright for browser automation to handle dynamic content, user authentication, and page navigation. The scraped data is cleaned, structured, and saved as JSON files, with associated images downloaded to organized directories.
 
 Key Features
 Configuration:
