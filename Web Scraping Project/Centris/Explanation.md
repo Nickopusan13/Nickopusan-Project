@@ -34,76 +34,61 @@ Stores configuration details such as:
   - `user_password`: Centris login password
   - `already_scrape_id`: List of previously scraped listing IDs
   - `root_download_folder`: Directory path for saving scraped data
-- [`centris/pipelines.py`](centris/pipelines.py):
+- [`pipelines.py`](centris/pipelines.py):
 Defines the `CentrisPipeline` class, which:
   - Cleans scraped data
   - Structures it into a dictionary
   - Saves it as JSON files
   - Downloads and stores images
-- `centris/settings.py`:
+- [`settings.py`](centris/settings.py):
 Configures Scrapy settings, including:
   - Playwright launch options (e.g., headless mode)
   - Middleware for user agent rotation
   - Pipeline integration
   - Proxy settings
-- `centris/items.py`:
+- [`items.py`](centris/items.py):
 Defines the `CentrisItem` class, specifying fields for scraped data (e.g., `url`, `id`, `price`, etc.).
-- `centris/middlewares.py`:
+- [`middlewares.py`](centris/middlewares.py):
 Contains custom middleware:
   - `ScrapeOpsFakeUserAgentMiddleware`: Rotates user agents via the ScrapeOps API
   - `MyProxyMiddleware`: Manages rotating proxies (currently disabled)
-`centris/spiders/centris_spider.py`:
-The main spider class (CentrisSpiderSpider) that:
-Logs into Centris
-Navigates to saved searches
-Scrapes property listings
-Handles pagination
-How to Use
+- [`centris_spider.py`](centris/spiders/centris_spider.py):
+The main spider class (`CentrisSpiderSpider`) that:
+  - Logs into Centris
+  - Navigates to saved searches
+  - Scrapes property listings
+  - Handles pagination
+## How to Use
 Follow these steps to set up and run the project:
 
-Configuration:
-Update the config.json file with your Centris credentials and desired output directory. Example:
-json
-
-Collapse
-
-Wrap
-
-Copy
+### 1. Configuration:
+Update the [`config.json`](config.json) file with your Centris credentials and desired output directory. Example:
+```json
 {
     "user_name": "your_email@example.com",
     "user_password": "your_password",
     "already_scrape_id": [],
     "root_download_folder": "C:/path/to/output"
 }
-Install Dependencies:
+```
+### 2. Install Dependencies:
 Install the required libraries using pip and set up Playwright:
-bash
-
-Collapse
-
-Wrap
-
-Copy
+```bash
 pip install scrapy playwright
 playwright install
-Run the Spider:
+```
+### 3. Run the Spider:
 Execute the spider from the project directory with:
-bash
-
-Collapse
-
-Wrap
-
-Copy
+```bash
 scrapy crawl centris_spider
-Notes
-Ensure you have a valid Centris account, as the spider requires login credentials to access saved searches.
-The project is configured to run in headless mode by default. To debug visually, set "headless": False in PLAYWRIGHT_LAUNCH_OPTIONS in settings.py.
-Proxy support can be enabled by uncommenting the proxy middleware in settings.py and providing a list of proxies in ROTATING_PROXY_LIST.
-Example Output
-For each scraped listing, the project creates a directory named after the listing ID (e.g., 12345678) containing:
+```
+## Notes
+- Ensure you have a valid Centris account, as the spider requires login credentials to access saved searches.
+- The project is configured to run in headless mode by default. To debug visually, set `"headless": False` in `PLAYWRIGHT_LAUNCH_OPTIONS` in [`settings.py`](centris/settings.py).
+- Proxy support can be enabled by uncommenting the proxy middleware in [`settings.py`](centris/settings.py) and providing a list of proxies in `ROTATING_PROXY_LIST`.
+## Example Output
+For each scraped listing, the project creates a directory named after the listing ID (e.g., `12345678`) containing:
 
-12345678.json: A JSON file with structured property details
-Image files (e.g., abc123.jpg): Downloaded images associated with the listing
+- `12345678.json`: A JSON file with structured property details
+- Image files (e.g., `abc123.jpg`): Downloaded images associated with the listing
 This project demonstrates a robust approach to web scraping with Scrapy and Playwright, effectively handling authentication, dynamic content, and data storage for real estate data extraction.
