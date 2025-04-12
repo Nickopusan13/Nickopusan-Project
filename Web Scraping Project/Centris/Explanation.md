@@ -3,9 +3,9 @@ This Scrapy project is designed to scrape property listings from the [`Centris`]
 
 ## Key Features
 - **Configuration**:
-The project uses a ['config.json'](config.json) file to store sensitive information such as the username, password, and root download folder for scraped data. It also tracks already scraped listing IDs to prevent duplicate scraping.
+The project uses a [`config.json`](config.json) file to store sensitive information such as the username, password, and root download folder for scraped data. It also tracks already scraped listing IDs to prevent duplicate scraping.
 - **Login Handling**:
-The spider logs into the Centris website using credentials provided in ['config.json'](config.json), enabling access to user-specific saved searches.
+The spider logs into the Centris website using credentials provided in [`config.json`](config.json), enabling access to user-specific saved searches.
 - **Saved Searches**:
 It navigates to the "My Searches" page on Centris and extracts URLs of saved searches, which are then used to scrape property listings.
 - **Property Scraping**:
@@ -28,7 +28,7 @@ Fake user agents are rotated using the ScrapeOps API to make requests appear as 
 - **Proxy Support**:
 The project includes optional support for rotating proxies (currently commented out), which can be enabled for additional anonymity.
 Project Structure
-- ['config.json'](config.json):
+- [`config.json`](config.json):
 Stores configuration details such as:
   - user_name: Centris login email
   - user_password: Centris login password
