@@ -1,5 +1,5 @@
 # CME Group Trading Hours Scraper
-This Python script [`CME.py`](CME.oy) automates the process of scraping trading hours data from the CME Group Trading Hours page using the playwright library. It extracts product names and their associated trading hours, then saves the data into a timestamped CSV file for easy analysis or record-keeping.
+This Python script [`CME.py`](CME.py) automates the process of scraping trading hours data from the CME Group Trading Hours page using the playwright library. It extracts product names and their associated trading hours, then saves the data into a timestamped CSV file for easy analysis or record-keeping.
 
 ## Overview
 - **Purpose**: Scrape trading hours data for various financial products listed on the CME Group website.
