@@ -1,39 +1,39 @@
 # Centris Web Scraper
-This Scrapy project is designed to scrape property listings from the [`Centris`](https://www.centris.ca/)Centris website, a real estate platform. It leverages Scrapy for web scraping and Playwright for browser automation to handle dynamic content, user authentication, and page navigation. The scraped data is cleaned, structured, and saved as JSON files, with associated images downloaded to organized directories.
+This Scrapy project is designed to scrape property listings from the [`Centris`](https://www.centris.ca/) real estate platform website. It leverages Scrapy for web scraping and Playwright for browser automation to handle dynamic content, user authentication, and page navigation. The scraped data is cleaned, structured, and saved as JSON files, with associated images downloaded to organized directories.
 
-Key Features
-Configuration:
-The project uses a config.json file to store sensitive information such as the username, password, and root download folder for scraped data. It also tracks already scraped listing IDs to prevent duplicate scraping.
-Login Handling:
-The spider logs into the Centris website using credentials provided in config.json, enabling access to user-specific saved searches.
-Saved Searches:
+## Key Features
+- **Configuration**:
+The project uses a ['config.json'](config.json) file to store sensitive information such as the username, password, and root download folder for scraped data. It also tracks already scraped listing IDs to prevent duplicate scraping.
+- **Login Handling**:
+The spider logs into the Centris website using credentials provided in ['config.json'](config.json), enabling access to user-specific saved searches.
+- **Saved Searches**:
 It navigates to the "My Searches" page on Centris and extracts URLs of saved searches, which are then used to scrape property listings.
-Property Scraping:
+- **Property Scraping**:
 For each saved search, the spider scrapes property listings, extracting details including:
-URL
-Listing ID
-Image URLs
-Price
-Address
-Number of bedrooms and bathrooms
-Property type
-Land area
-Potential gross revenue
-Data Cleaning and Storage:
+  - **URL**
+  - **Listing ID**
+  - **Image URLs**
+  - **Price**
+  - **Address**
+  - **Number of bedrooms and bathrooms**
+  - **Property type**
+  - **Land area**
+  - **Potential gross revenue**
+- **Data Cleaning and Storage**:
 Scraped data is cleaned (e.g., removing extra whitespace and non-breaking spaces) and structured into a dictionary. Each listing is saved as a JSON file in a directory named after its ID, with associated images downloaded to the same location.
-Pagination:
+- **Pagination**:
 The spider uses Playwright to interact with the "next" button, scraping all available pages of listings.
-User Agent Rotation:
+- **User Agent Rotation**:
 Fake user agents are rotated using the ScrapeOps API to make requests appear as though they come from different browsers, reducing the likelihood of being blocked.
-Proxy Support:
+- **Proxy Support**:
 The project includes optional support for rotating proxies (currently commented out), which can be enabled for additional anonymity.
 Project Structure
-config.json:
+- ['config.json'](config.json):
 Stores configuration details such as:
-user_name: Centris login email
-user_password: Centris login password
-already_scrape_id: List of previously scraped listing IDs
-root_download_folder: Directory path for saving scraped data
+  - user_name: Centris login email
+  - user_password: Centris login password
+  - already_scrape_id: List of previously scraped listing IDs
+  - root_download_folder: Directory path for saving scraped data
 centris/pipelines.py:
 Defines the CentrisPipeline class, which:
 Cleans scraped data
