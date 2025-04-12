@@ -34,25 +34,25 @@ Stores configuration details such as:
   - `user_password`: Centris login password
   - `already_scrape_id`: List of previously scraped listing IDs
   - `root_download_folder`: Directory path for saving scraped data
-- [`pipelines.py`](pipelines.py):
+- [`centris/pipelines.py`](centris/pipelines.py):
 Defines the `CentrisPipeline` class, which:
-Cleans scraped data
-Structures it into a dictionary
-Saves it as JSON files
-Downloads and stores images
-centris/settings.py:
+  - Cleans scraped data
+  - Structures it into a dictionary
+  - Saves it as JSON files
+  - Downloads and stores images
+- `centris/settings.py`:
 Configures Scrapy settings, including:
-Playwright launch options (e.g., headless mode)
-Middleware for user agent rotation
-Pipeline integration
-Proxy settings (commented out)
-centris/items.py:
-Defines the CentrisItem class, specifying fields for scraped data (e.g., url, id, price, etc.).
-centris/middlewares.py:
+  - Playwright launch options (e.g., headless mode)
+  - Middleware for user agent rotation
+  - Pipeline integration
+  - Proxy settings
+- `centris/items.py`:
+Defines the `CentrisItem` class, specifying fields for scraped data (e.g., `url`, `id`, `price`, etc.).
+- `centris/middlewares.py`:
 Contains custom middleware:
-ScrapeOpsFakeUserAgentMiddleware: Rotates user agents via the ScrapeOps API
-MyProxyMiddleware: Manages rotating proxies (currently disabled)
-centris/spiders/centris_spider.py:
+  - `ScrapeOpsFakeUserAgentMiddleware`: Rotates user agents via the ScrapeOps API
+  - `MyProxyMiddleware`: Manages rotating proxies (currently disabled)
+`centris/spiders/centris_spider.py`:
 The main spider class (CentrisSpiderSpider) that:
 Logs into Centris
 Navigates to saved searches
