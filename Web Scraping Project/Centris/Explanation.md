@@ -30,12 +30,12 @@ The project includes optional support for rotating proxies (currently commented 
 Project Structure
 - [`config.json`](config.json):
 Stores configuration details such as:
-  - user_name: Centris login email
-  - user_password: Centris login password
-  - already_scrape_id: List of previously scraped listing IDs
-  - root_download_folder: Directory path for saving scraped data
-centris/pipelines.py:
-Defines the CentrisPipeline class, which:
+  - `user_name`: Centris login email
+  - `user_password`: Centris login password
+  - `already_scrape_id`: List of previously scraped listing IDs
+  - `root_download_folder`: Directory path for saving scraped data
+- [`pipelines.py`](pipelines.py):
+Defines the `CentrisPipeline` class, which:
 Cleans scraped data
 Structures it into a dictionary
 Saves it as JSON files
