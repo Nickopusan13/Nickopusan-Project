@@ -12,7 +12,7 @@ This project is ideal for users who need structured data from Google Maps, such 
 - **Asynchronous Operations**: Uses `asyncio` to handle scraping tasks efficiently, keeping the UI responsive.
 ## Components
 The project is split into three main files, each with a specific role:
-### 1. `main.py`
+### 1. [`main.py`](main.py)
 **Purpose**: Serves as the entry point of the application, managing the GUI and coordinating the scraping and cleaning processes.
 - **StarryBackground Class**:
   - Creates a canvas with a black background, twinkling stars, and a moon with craters for aesthetic appeal.
