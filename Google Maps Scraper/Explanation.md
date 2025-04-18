@@ -83,4 +83,4 @@ Watch the status bar for updates (e.g., "Scraping Starbucks...").
 5. **View Results**:
 On completion, a pop-up shows the paths to the raw and cleaned CSV files (e.g., `output/restaurants.csv` and `output/cleaned_restaurants.csv`).
 
-
+![Google Maps Output](https://github.com/Nickopusan13/Nickopusan-Portofolio/blob/master/Google%20Maps%20Scraper/Image/Google%20Maps%20Output.png)
