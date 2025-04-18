@@ -73,14 +73,14 @@ The project is split into three main files, each with a specific role:
   - Saves the cleaned data to a new file prefixed with cleaned_ (e.g., `cleaned_restaurants_in_New_York.csv`).
 ## Usage
 1. **Run the Application**:
-  - Execute python main.py to launch the GUI.
+    - Execute python main.py to launch the GUI.
 2. **Enter Search Term**:
-  - Type a query (e.g., "cafes in San Francisco") into the search field.
+    - Type a query (e.g., "cafes in San Francisco") into the search field.
 3. **Start Scraping**:
-  - Click "Start Scraping" to begin.
+    - Click "Start Scraping" to begin.
 4. **Monitor Progress**:
-Watch the status bar for updates (e.g., "Scraping Starbucks...").
+    - Watch the status bar for updates (e.g., "Scraping Starbucks...").
 5. **View Results**:
-On completion, a pop-up shows the paths to the raw and cleaned CSV files (e.g., `output/restaurants.csv` and `output/cleaned_restaurants.csv`).
+    - On completion, a pop-up shows the paths to the raw and cleaned CSV files (e.g., `output/restaurants.csv` and `output/cleaned_restaurants.csv`).
 
 ![Google Maps Output](https://github.com/Nickopusan13/Nickopusan-Portofolio/blob/master/Google%20Maps%20Scraper/Image/Google%20Maps%20Output.png)
