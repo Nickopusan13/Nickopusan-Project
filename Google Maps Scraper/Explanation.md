@@ -1,4 +1,4 @@
-<img src="https://github.com/Nickopusan13/Nickopusan-Portofolio/blob/master/Google%20Maps%20Scraper/Image/Google%20Maps%20UI.png?raw=true" width="1600" alt="Google Maps UI">
+<img src="https://github.com/Nickopusan13/Nickopusan-Portofolio/blob/master/Google%20Maps%20Scraper/Image/Google%20Maps%20UI.png?raw=true" width="1600" alt="Google Maps UI">  
 # Google Maps Scraper
 ## Overview
 The Google Maps Scraper is a Python-based tool designed to extract business information from Google Maps based on a user-provided search query (e.g., "restaurants in New York"). It leverages asynchronous web scraping with Playwright, processes the raw data for consistency, and provides a graphical user interface (GUI) built with Tkinter. The scraped data is saved as CSV files, both in raw and cleaned formats, making it ready for analysis or further use.
