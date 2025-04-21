@@ -4,7 +4,7 @@ This project is a Python-based web scraper designed to extract detailed informat
 
 ## Project Structure
 The project is organized into three main Python files:
-- [`scraper.py`](scraper.py): Handles the core web scraping functionality.
+- [`scraper.py`](scraper/scraper.py): Handles the core web scraping functionality.
 - cleaner.py: Provides utility functions to clean and process the scraped data.
 main.py: Offers a graphical user interface (GUI) for interacting with the scraper.
 scraper.py
