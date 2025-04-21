@@ -11,9 +11,6 @@ def clean_hosted_by(text):
     text = text.replace("Hosted by", "").strip()
     return re.sub(r'\s+', ' ', text)
 
-def from_char_list(char_list):
-    return "".join(char_list).replace('\u202f', ' ').strip()
-
 def clean_rules(raw_text):
     house_rules = []
     additional_rules = []
