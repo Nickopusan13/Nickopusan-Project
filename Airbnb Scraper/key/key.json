@@ -1,13 +1,13 @@
 {
-  "type": "service_account",
-  "project_id": "pure-quasar-457404-f9",
-  "private_key_id": "1e3b2f8ecd29a519fd75c219ee51e4b6d7ca90ee",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQAHxFYZ/1cFiQ\ntY0I443Ej20B3I1kulqu0t/ERUIFwS9g6L0M1yOv27oqjzUfZ/4CU6hKby3/q2B2\nLog8ak9Ind6XzacagbNVHiie/CfGwrBTILIUhdqN9+UdY7rOauwF+O4RrXA90JPw\nEKta75VEO3hRBxw4iTt37zRYAopeUsphgnGid4AcrfYW0OdkCd0aZCRnjlFhjHp+\nYDsz0GPsOoss5r37BZKlkLG/nsIu6Ca/9/zavMpTqUUkwZ8kErNsrEB8lAX7RU1T\nYIBlnnU80MWSkO87orweA3seZrLDUIVb6u6sQNjSepChcdTdz45qVkT6KIOI5Lhf\nYjaF2RK1AgMBAAECggEANlpiHuk/WO4mHo5qj8+SvLHz/MAK7K7rwnJVSd8FPSa5\nwDuhJylS6IHk+Hkamx3cGPSObgD2hrBcURWgwRTQqfui7o0tZPZOi+gJGl5u8Hfw\nhpBtKIK/1UhZhSAJ8SWsjnT5lQH66hRGjD124Zjoqv9VVesjOzzVHuaRiYwEZ1gH\ncBhGtBrulFhNZxFsuqqKK1CZ8DxusfQOlXGwbGZodsuJe6ejDBa8+Lvwk4t3geLi\nWiF4afyNUzFYUQKVDCZJaYsEWS8S5CDVUdQhYyH4LwyaUXDxexGU/vCRiUHObPdO\nT7qNUaC8WYzgeJHOzWcIlX1HVZDSM2ubpvTnj9ssgwKBgQDqcJswHX1C7Z2bYNUF\nZ9XxXPYt3fbMpEGVRjYjt/12aBPhgF/TH79NgOnP83wu9DrLkVbD+xHs8uBBv45o\ncNPxN2cbQHp9asbd8TBvVH2Ywa4lOv6MJJCb0ldOe6EgXWCSdyXB2u+SqvNiSI2d\nBMb2+dxIUEJ2q2qtfk82ct1V1wKBgQDjIXPoujEoK2z6lEcXbptd4ZQQGg5I/fpx\nMmPmQc3RRJ65iAk4XlLNsLw9HioEx6w5WJfAa2notJGfH4bZeHhiUPLASOWUNM3Z\ngBP114EQmySjjirNheXXIUcZxBghKNMSWie1ClSCvmZJX/clE6vftwFkkLkcddOv\n+BgRSnfyUwKBgQDYUVTwXZVyBvxRHVURatEep29DvTZ3duxIx4M3DBMkiT4m6aQB\nk56Z7eRQC9O/I32Izi9oICdXInfIUu8c8VaukTdjDui3Bqo+qcjOQQCuza9ZDQlI\n2IhSLxB+C1cOHPr5ylSdfd1m0LRIMLfydTD9PGmElAHvq5WARjbi/7O4+wKBgQCN\ncQupZimuhjx7X1NWOD7wm8WEsXUr513KmEK15UyygTUG/LwhKjwOc30F4n7wMxgB\nLjZyUXHGxIvat9tWGjt9nkNNkxfEz41RYP0NH4L0QGj0oVfuXO/gpIyOcxtDqxSm\nXRZVG3W9Zax1DRnvMOzbiC+J3MYp/wYwkyMJwYIomQKBgHV+4u9mtu1GZccM/mak\nYQ/c4gowb15r2+XYItgdMvqCs4KkHc7qgsv7nOYQDpRvyJHaX/B7WoLSH46Dolb0\nRdtHVqYXqY7rr/SA7dF3LZsd0hKM1Vs/tQoVBVWLOAUL2FL4ctNqkrmUzM4NBb8L\neEJv9VWaZ8V6kWzeAAV6Z9o8\n-----END PRIVATE KEY-----\n",
-  "client_email": "sheets-bot@pure-quasar-457404-f9.iam.gserviceaccount.com",
-  "client_id": "103367137051170132388",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheets-bot%40pure-quasar-457404-f9.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+  "type": "##########",
+  "project_id": "############",
+  "private_key_id": "#############",
+  "private_key": "###############",
+  "client_email": "##############",
+  "client_id": "##########",
+  "auth_uri": "###########",
+  "token_uri": "############",
+  "auth_provider_x509_cert_url": "#############3",
+  "client_x509_cert_url": "##############",
+  "universe_domain": "################3"
 }
