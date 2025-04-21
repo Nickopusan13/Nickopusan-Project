@@ -5,7 +5,6 @@ from scraper import AirbnbScraper
 import asyncio
 
 class MonokaiTheme:
-    """Monokai theme colors and styles"""
     BG = "#272822"
     CARD_BG = "#1E1F1C"
     TEXT = "#F8F8F2"
