@@ -1,5 +1,5 @@
 from oauth2client.service_account import ServiceAccountCredentials
-from cleaner import clean_text, extract_number, extract_rating, clean_hosted_by, clean_amenities, clean_rules, from_char_list
+from cleaner import clean_text, extract_number, extract_rating, clean_hosted_by, clean_amenities, clean_rules
 from playwright.async_api import async_playwright
 from dotenv import load_dotenv
 import threading
