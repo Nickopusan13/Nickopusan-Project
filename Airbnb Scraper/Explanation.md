@@ -45,14 +45,13 @@ These functions are called by `scraper.py` to preprocess data before saving it t
 ### 3. main.py
 This file creates a graphical user interface (GUI) using `tkinter`, allowing users to configure and run the scraper without modifying code. It features a modern Monokai-inspired theme for a polished look.
 **Key Features**:
-
-Input Fields: Users can specify:
-Search location (e.g., "New York")
-Maximum number of pages to scrape
-Google Sheet name for data storage
-Concurrency level (number of simultaneous scraping tasks)
-Delay between requests (in seconds)
-Controls: Buttons to start and stop the scraping process.
-Real-Time Feedback: Displays logs (e.g., progress, errors) and status updates (e.g., "Scraping in progress").
-Threading: Runs the scraper in a separate thread to keep the GUI responsive.
+- **Input Fields**: Users can specify:
+  - Search location (e.g., "New York")
+  - Maximum number of pages to scrape
+  - Google Sheet name for data storage
+  - Concurrency level (number of simultaneous scraping tasks)
+  - Delay between requests (in seconds)
+- **Controls**: Buttons to start and stop the scraping process.
+- **Real-Time Feedback**: Displays logs (e.g., progress, errors) and status updates (e.g., "Scraping in progress").
+- **Threading**: Runs the scraper in a separate thread to keep the GUI responsive.
 The GUI validates inputs, provides color-coded status indicators, and supports log clearing for a clean user experience.
