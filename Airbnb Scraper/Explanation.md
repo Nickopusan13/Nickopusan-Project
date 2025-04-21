@@ -5,15 +5,14 @@ This project is a Python-based web scraper designed to extract detailed informat
 ## Project Structure
 The project is organized into three main Python files:
 - [`scraper.py`](scraper/scraper.py): Handles the core web scraping functionality.
-- cleaner.py: Provides utility functions to clean and process the scraped data.
-main.py: Offers a graphical user interface (GUI) for interacting with the scraper.
-scraper.py
-This file contains the AirbnbScraper class, which is responsible for scraping data from Airbnb. It uses the following libraries:
-
-playwright: For browser automation and scraping.
-gspread: For saving data to Google Sheets.
-oauth2client: For Google API authentication.
-Key Features:
+- [`cleaner.py`](scraper/cleaner.py): Provides utility functions to clean and process the scraped data.
+- [`main.py`](scraper/main.py): Offers a graphical user interface (GUI) for interacting with the scraper.
+### 1. scraper.py
+This file contains the `AirbnbScraper` class, which is responsible for scraping data from Airbnb. It uses the following libraries:
+- `playwright`: For browser automation and scraping.
+- `gspread`: For saving data to Google Sheets.
+- `oauth2client`: For Google API authentication.
+**Key Features**:
 
 Authentication: Logs into Airbnb using credentials stored in a .env file.
 Search: Performs a search for listings based on a user-specified location.
