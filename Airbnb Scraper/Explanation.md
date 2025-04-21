@@ -55,3 +55,5 @@ This file creates a graphical user interface (GUI) using `tkinter`, allowing use
 - **Real-Time Feedback**: Displays logs (e.g., progress, errors) and status updates (e.g., "Scraping in progress").
 - **Threading**: Runs the scraper in a separate thread to keep the GUI responsive.
 The GUI validates inputs, provides color-coded status indicators, and supports log clearing for a clean user experience.
+
+!['Output'](https://github.com/Nickopusan13/Nickopusan-Project/blob/master/Airbnb%20Scraper/image/Output1.png)
