@@ -12,42 +12,39 @@ This file contains the `AirbnbScraper` class, which is responsible for scraping 
 - `playwright`: For browser automation and scraping.
 - `gspread`: For saving data to Google Sheets.
 - `oauth2client`: For Google API authentication.
-**Key Features**:
 
-Authentication: Logs into Airbnb using credentials stored in a .env file.
-Search: Performs a search for listings based on a user-specified location.
-Data Extraction: Scrapes detailed information from each listing, including:
-Title and short description
-Price and discounts
-Host details
-Reviews and ratings
-Guest capacity, bedrooms, beds, and baths
-Amenities (available and unavailable)
-House rules and additional rules
-Safety and property information
-Listing URL and image URL
-Pagination: Navigates through multiple pages of search results (up to a user-defined maximum).
-Concurrency: Uses asynchronous scraping with a configurable concurrency level to process multiple listings simultaneously.
-Data Storage: Writes the scraped data to a Google Sheet, with columns predefined for all extracted fields.
+**Key Features**:
+- **Authentication**: Logs into Airbnb using credentials stored in a .env file.
+- **Search**: Performs a search for listings based on a user-specified location.
+- **Data Extraction**: Scrapes detailed information from each listing, including:
+  - Title and short description
+  - Price and discounts
+  - Host details
+  - Reviews and ratings
+  - Guest capacity, bedrooms, beds, and baths
+  - Amenities (available and unavailable)
+  - House rules and additional rules
+  - Safety and property information
+  - Listing URL and image URL
+- **Pagination**: Navigates through multiple pages of search results (up to a user-defined maximum).
+- **Concurrency**: Uses asynchronous scraping with a configurable concurrency level to process multiple listings simultaneously.
+- **Data Storage**: Writes the scraped data to a Google Sheet, with columns predefined for all extracted fields.
 The scraper also includes error handling, logging, and a stop mechanism to gracefully halt the process if needed.
 
-cleaner.py
+### 2. cleaner.py
 This file provides utility functions to process and clean the raw data scraped from Airbnb, ensuring it’s consistent and usable. It relies on regular expressions (re) for text manipulation.
+**Key Functions**:
+- `clean_text`: Removes unnecessary characters, whitespace, and newlines from text.
+- `clean_hosted_by`: Extracts the host’s name from "Hosted by" text.
+- `clean_rules`: Parses house rules and additional rules into separate lists, removing duplicates and formatting them as comma-separated strings.
+- `clean_amenities`: Categorizes amenities into "available" and "unavailable" lists, handling special cases like "Unavailable:" prefixes.
+- `extract_number`: Extracts numeric values (e.g., number of guests or beds) from text.
+- `extract_rating`: Pulls out rating scores (e.g., "4.85") from text.
+These functions are called by `scraper.py` to preprocess data before saving it to the Google Sheet.
 
-Key Functions:
-
-clean_text: Removes unnecessary characters, whitespace, and newlines from text.
-clean_hosted_by: Extracts the host’s name from "Hosted by" text.
-clean_rules: Parses house rules and additional rules into separate lists, removing duplicates and formatting them as comma-separated strings.
-clean_amenities: Categorizes amenities into "available" and "unavailable" lists, handling special cases like "Unavailable:" prefixes.
-extract_number: Extracts numeric values (e.g., number of guests or beds) from text.
-extract_rating: Pulls out rating scores (e.g., "4.85") from text.
-These functions are called by scraper.py to preprocess data before saving it to the Google Sheet.
-
-main.py
-This file creates a graphical user interface (GUI) using tkinter, allowing users to configure and run the scraper without modifying code. It features a modern Monokai-inspired theme for a polished look.
-
-Key Features:
+### 3. main.py
+This file creates a graphical user interface (GUI) using `tkinter`, allowing users to configure and run the scraper without modifying code. It features a modern Monokai-inspired theme for a polished look.
+**Key Features**:
 
 Input Fields: Users can specify:
 Search location (e.g., "New York")
