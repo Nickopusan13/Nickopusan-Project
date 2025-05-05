@@ -1,40 +1,17 @@
 # Yellow Pages Scraper
-
 This project is a Python-based web scraper designed to extract business listings from Yellow Pages. It uses Playwright for browser automation and features a user-friendly graphical interface to streamline the scraping process.
 
-Project Structure
-
+## Project Structure
 The project is organized into four main Python files:
+- `middlewares.py`: Handles fetching random headers and user agents.
+- `cleaner.py`: Provides utility functions to clean and process the scraped data.
+- `scraper.py`: Contains the core web scraping functionality.
+- `main.py`: Offers a graphical user interface (GUI) for interacting with the scraper.
 
-
-
-
-
-middlewares.py: Handles fetching random headers and user agents.
-
-
-
-cleaner.py: Provides utility functions to clean and process the scraped data.
-
-
-
-scraper.py: Contains the core web scraping functionality.
-
-
-
-main.py: Offers a graphical user interface (GUI) for interacting with the scraper.
-
-1. middlewares.py
-
-This file contains the Middlewares class, which is responsible for fetching random headers and user agents from the ScrapeOps API. It uses the following libraries:
-
-
-
-
-
-Standard Python libraries for HTTP requests.
-
-Key Features:
+### 1. middlewares.py
+This file contains the `Middlewares` class, which is responsible for fetching random headers and user agents from the ScrapeOps API. It uses the following libraries:
+- Standard Python libraries for HTTP requests.
+**Key Features**:
 
 
 
